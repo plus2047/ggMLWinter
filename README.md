@@ -19,3 +19,5 @@ We upload all those chars and our models into github, so **it may takes some min
 The UI is a flask project. it's very sample, just go to `web` folder and run `flask run` to lauch it.
 
 ## Reference
+
+[Sketch RNN](https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn)
