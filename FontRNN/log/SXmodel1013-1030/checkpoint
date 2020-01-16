@@ -1,0 +1,6 @@
+model_checkpoint_path: "vector-8400"
+all_model_checkpoint_paths: "vector-6700"
+all_model_checkpoint_paths: "vector-7100"
+all_model_checkpoint_paths: "vector-7700"
+all_model_checkpoint_paths: "vector-7800"
+all_model_checkpoint_paths: "vector-8400"

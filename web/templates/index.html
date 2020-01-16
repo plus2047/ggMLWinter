@@ -11,27 +11,21 @@
 <h4> Please input some chinese characters: </h4>
 <form method="post">
     {{ form.csrf_token }}
-    <p align="center"> {{ form.string(cols=115, rows=3) }} </p>
+    <p align="center"> {{ form.string }} </p>
     {{ form.submit(class='btn') }}
 </form>
 
 {% if pic_list %}
-    <h4> Write it down! </h4>
+<h4> Write it down! </h4>
 
+<p>
     {% for pic in pic_list %}
-        <img width="50" src={{pic}} />
-        {% if loop.index0 % 13 == 12 %}
-            <br>
-        {% endif %}
+    <img width="100" src={{pic}} />
+    {% if (loop.index0 + 1) % 6 == 0 %}
+    <br>
+    {% endif %}
     {% endfor %}
-
-    <h4> And try calligraphy !</h4>
-    {% for pic in pic_list %}
-        <img width="50" src={{pic}} />
-        {% if loop.index0 % 13 == 12 %}
-            <br>
-        {% endif %}
-    {% endfor %}
+</p>
 
 {% endif %}
 

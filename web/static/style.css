@@ -67,3 +67,13 @@ footer {
     color: black;
     border: 2px solid #555555;
 }
+
+html, body, textarea {
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 6vh;
+    width: 100%;
+    font-size: 14pt;
+}
