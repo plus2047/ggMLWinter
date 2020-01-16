@@ -1,0 +1,38 @@
+{% extends 'basic.html' %}
+{% from 'macros.html' import form_field %}
+
+{% block content %}
+
+<h1 align="center"> Learning Chinese Characters </h1>
+<h2 align="center"> ML Winter Camp Demo </h2>
+
+<hr>
+
+<h4> Please input some chinese characters: </h4>
+<form method="post">
+    {{ form.csrf_token }}
+    <p align="center"> {{ form.string(cols=115, rows=3) }} </p>
+    {{ form.submit(class='btn') }}
+</form>
+
+{% if pic_list %}
+    <h4> Write it down! </h4>
+
+    {% for pic in pic_list %}
+        <img width="50" src={{pic}} />
+        {% if loop.index0 % 13 == 12 %}
+            <br>
+        {% endif %}
+    {% endfor %}
+
+    <h4> And try calligraphy !</h4>
+    {% for pic in pic_list %}
+        <img width="50" src={{pic}} />
+        {% if loop.index0 % 13 == 12 %}
+            <br>
+        {% endif %}
+    {% endfor %}
+
+{% endif %}
+
+{% endblock %}

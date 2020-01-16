@@ -1,0 +1,25 @@
+{% from 'macros.html' import static_file %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <meta charset="utf-8"/>
+            <title>{% block title %} Google ML Winter Camp {% endblock %}</title>
+            <!-- {{ static_file("icon", "favicon.ico") }} -->
+            {% block style %} {{ static_file("css", "style.css") }} {% endblock %}
+        {% endblock %}
+    </head>
+
+    <body background="../static/background.jpg">
+        <main>
+            {% for message in get_flashed_messages() %}
+                <div class="alert">{{ message }}</div>
+            {% endfor %}
+            {% block content %}{% endblock %}
+        </main>
+
+        {% block scripts %}
+        {% endblock %}
+    </body>
+</html>
