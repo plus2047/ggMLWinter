@@ -21,4 +21,5 @@ The UI is a flask project. it's very sample, just go to `web` folder and run `fl
 ## Reference
 
 [Sketch RNN](https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn)
+
 [FontRNN](https://github.com/ShusenTang/FontRNN)
