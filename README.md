@@ -4,7 +4,7 @@ Google ML Winter Camp 2020, Yang Hu, Jiahao Xu, Xiaohan Yu ~
 
 All code used for our final demo is here.
 
-`FontRNN` is the code for preprocessing and training. It's fork from [FontRNN](https://github.com/ShusenTang/FontRNN).
+`FontRNN` is the code for preprocessing and training. It's based on [FontRNN](https://github.com/ShusenTang/FontRNN).
 
 We use [CASIA Online dataset](http://www.nlpr.ia.ac.cn/databases/handwriting/Home.html).
 
