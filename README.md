@@ -20,6 +20,10 @@ The UI is a flask project. it's very sample, just go to `web` folder and run `fl
 
 [Demo on Google Cloud](http://34.80.186.156:80/)
 
+---
+
+[Google website for the Winter camp](https://sites.google.com/google.com/ml-camp/2020-camp/beijing-site/winning-teams)
+
 ## Reference
 
 [Sketch RNN](https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn)
